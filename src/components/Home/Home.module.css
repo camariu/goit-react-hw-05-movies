@@ -1,0 +1,39 @@
+.home {
+  background: #000000;
+}
+
+.home h1 {
+    color: white;
+ padding: 20px;
+ text-align: center;
+}
+
+.homeMovie {
+  background: #000000;
+}
+
+.homeMovie ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 80px;
+  justify-content: center;
+ 
+}
+
+.homeMovieLink {
+  text-decoration: none;
+  color: white;
+ 
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.detalisMoviesImage img {
+  border: 2px sandybrown solid;
+}
+
+.homeMovie p {
+  margin-top: 15px;
+}
+

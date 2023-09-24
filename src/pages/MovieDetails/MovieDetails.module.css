@@ -1,0 +1,72 @@
+.detalisMovies {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.movieDetails {
+  background: #000000;
+}
+.btn {
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+  padding: 5px 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(224, 79, 79);
+  cursor: pointer;
+  border: color(srgb red green blue);
+}
+
+.infoMovie {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoMovie h1,
+p,
+h2,
+h3,
+ul {
+  color: #fff;
+}
+
+.infoMovie ul {
+  display: flex;
+  gap: 15px;
+}
+
+.movieCastReviews {
+  margin-top: 40px;
+}
+
+.movieCastReviewsList p {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.movieCastReviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  height: 200px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.detalisMoviesImage img {
+  border: 2px sandybrown solid;
+}
+
+.movieCastReviewsListLink {
+  margin-left: 20px;
+}
