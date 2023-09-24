@@ -33,12 +33,16 @@ export default function Home() {
   console.log(movies);
 
   return (
-    <div  className={style.home}>
+    <div className={style.home}>
       <h1>Trading Movies</h1>
-      <div  className={style.homeMovie}>
+      <div className={style.homeMovie}>
         <ul>
           {movies?.map(movie => (
-            <NavLink key={movie.id} to={`/movies/${movie.id}`} className={style.homeMovieLink}>
+            <NavLink
+              key={movie.id}
+              to={`/movies/${movie.id}`}
+              className={style.homeMovieLink}
+            >
               <div className={style.detalisMoviesImage}>
                 <img
                   src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
@@ -47,7 +51,9 @@ export default function Home() {
                   height="400px"
                 />
               </div>
-              <li><p>{movie.title}</p></li>
+              <li>
+                <p>{movie.title}</p>
+              </li>
             </NavLink>
           ))}
         </ul>

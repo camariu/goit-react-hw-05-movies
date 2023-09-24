@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Home/Home';
-import Navbar from './NavBar/NavBar';
+ import Navbar from './NavBar/NavBar';
 
 import { Route, Routes } from 'react-router-dom';
 import MoviesSearch from 'pages/MoviesSearch/MoviesSearch';
@@ -15,10 +15,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/movies" element={<MoviesSearch></MoviesSearch>}></Route>
-        <Route path="/movies/:movieId" element={<MovieDetails />}></Route>
-        <Route path='/' element={<MovieDetails></MovieDetails>}>
-          <Route path="/movies/:movieId/cast" element={<Cast></Cast>}></Route>
-          <Route path="/movies/:movieId/reviews" element={<Reviews></Reviews>} ></Route>
+        <Route path="/movies/:movieId" element={<MovieDetails />}>
+          <Route path="cast" element={<Cast></Cast>}></Route>
+          <Route path="reviews" element={<Reviews></Reviews>} ></Route>
         </Route>
       </Routes>
     </div>
